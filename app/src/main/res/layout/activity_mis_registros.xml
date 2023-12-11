@@ -8,25 +8,36 @@
     tools:context=".Principal_Estu"
     android:background="@color/gris">
 
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="55dp"
-        android:layout_height="47dp"
+    <ImageButton
+        android:id="@+id/ibPrincipal"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         app:srcCompat="@drawable/baseline_menu_24"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="1dp" />
+        android:background="@android:color/transparent"
+        android:contentDescription="Principal"/>
+
+
+    <ImageButton
+        android:id="@+id/ibCuenta"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="-51dp"
+        app:srcCompat="@drawable/baseline_bookmark_added_24"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="60dp"
+        android:contentDescription="Cuenta"/>
+
 
     <TextView
         android:id="@+id/tvTitulo"
         android:layout_width="wrap_content"
         android:layout_height="47dp"
         android:text="@string/tvTitulo"
-        android:textSize="28dp"
+        android:textSize="28sp"
         android:layout_marginTop="-47dp"
         android:textColor="@color/black"
         android:textStyle="bold"
         android:layout_marginLeft="130dp"/>
-
     <ImageView
         android:id="@+id/imageView3"
         style="@style/CardView.Dark"
@@ -50,12 +61,11 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-            <TextView
-                android:id="@+id/tvRegistros"
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvRegistros"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_height="match_parent" />
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
