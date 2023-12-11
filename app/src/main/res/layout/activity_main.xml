@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="248dp"
+        android:layout_height="209dp"
+        app:srcCompat="@drawable/descarga"
+        tools:layout_editor_absoluteX="81dp"
+        tools:layout_editor_absoluteY="58dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="85dp"/>
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="97dp"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        android:text="@string/tvTitulo" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/h" />
+
+    <EditText
+        android:id="@+id/etCorreo"
+        android:layout_width="259dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/etCorreo"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/etContra"
+        android:layout_width="262dp"
+        android:layout_height="49dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:hint="@string/etContra"
+        android:inputType="textPassword"
+        android:textAlignment="center" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnIngresar" />
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="165dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/btnRegistrar"/>
+
+</LinearLayout>

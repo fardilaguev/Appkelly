@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">App kelly</string>
+    //Principal
+    <string name="tvTitulo">Parqueadero</string>
+    <string name="etCorreo">Correo Institucional</string>
+    <string name="etContra">Contraseña</string>
+    <string name="btnIngresar">Ingresar</string>
+    <string name="btnRegistrar">Registrar</string>
+    <string name="tvTitulo5">Mi QR</string>
+    <string name="btnScan">Scanear</string>
+    //principal celadores
+    <string name="tvTitulo3">¿Qué QR vas a escanear?</string>
+    <string name="btnIngreso">Ingreso</string>
+    <string name="btnSalida">Salida</string>
+    <string name="btnCerrarSesion">Cerrar Sesión</string>
+</resources>

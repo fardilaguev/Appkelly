@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Principal_Estu"
+    android:background="@color/gris">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        app:srcCompat="@drawable/baseline_menu_24"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="1dp" />
+
+    <TextView
+        android:id="@+id/tvTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:text="@string/tvTitulo"
+        android:textSize="28dp"
+        android:layout_marginTop="-47dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_marginLeft="130dp"/>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        style="@style/CardView.Dark"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_marginLeft="355dp"
+        android:layout_marginTop="-45dp"
+        app:srcCompat="@drawable/descarga"
+        android:alpha="0.4"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="390dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="590dp"
+        app:cardCornerRadius="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/tvRegistros"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
