@@ -13,8 +13,21 @@
     <string name="btnIngreso">Ingreso</string>
     <string name="btnSalida">Salida</string>
     <string name="btnCerrarSesion">Cerrar Sesión</string>
+<<<<<<< HEAD
     //Usuario
     <string name="tvTitulo4">Perfil</string>
     <string name="btnRegistros">Mis Registros</string>
     <string name="tvTitulo5">Registros</string>
+=======
+    <string name="etCorreo2">Correo Institucional</string>
+    <string name="etContra2">Contraseña</string>
+    <string name="etName">Ingresa tu nombre</string>
+    <string name="btnRegister">Registrarse</string>
+    <string name="etPlaca">Número de Placa</string>
+    <string name="etModelo">Modelo del vehículo</string>
+    <string-array name="vehiculos">
+        <item>Moto</item>
+        <item>Bicicleta</item>
+    </string-array>
+>>>>>>> 7381b27cb3febc2d5f4770e7bbf14f96983e3cf7
 </resources>

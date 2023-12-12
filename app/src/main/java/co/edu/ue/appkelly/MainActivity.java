@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity{
         registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getApplicationContext(), Principal_Cela.class);
+                Intent intent = new Intent(getApplicationContext(), Registro.class);
                 startActivity(intent);
             }
         });
