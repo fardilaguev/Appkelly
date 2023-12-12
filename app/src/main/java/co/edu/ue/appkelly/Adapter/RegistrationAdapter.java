@@ -12,15 +12,16 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.List;
 
 import co.edu.ue.appkelly.R;
-import co.edu.ue.appkelly.model.Registros;
+import co.edu.ue.appkelly.model.Registration;
+import co.edu.ue.appkelly.model.Registration;
 
-public class RegistrosAdapter extends RecyclerView.Adapter<RegistrosAdapter.ViewHolder> {
+public class RegistrationAdapter extends RecyclerView.Adapter<RegistrationAdapter.ViewHolder> {
 
-    private List<Registros> registros;
+    private List<Registration> Registration;
     private Context context;
 
-    public RegistrosAdapter(List<Registros> registros, Context context) {
-        this.registros = registros;
+    public RegistrationAdapter(List<Registration> Registration, Context context) {
+        this.Registration = Registration;
         this.context = context;
     }
 
@@ -34,15 +35,15 @@ public class RegistrosAdapter extends RecyclerView.Adapter<RegistrosAdapter.View
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvReg_Date.setText(registros.get(position).getReg_date());
-        holder.tvVeh_Plate.setText(registros.get(position).getVeh_plate());
-        holder.tvUse_Name.setText(registros.get(position).getUse_name());
-        holder.tvTyre_Type.setText(registros.get(position).getTyre_type());
+        holder.tvReg_Date.setText(Registration.get(position).getReg_date());
+        holder.tvVeh_Plate.setText(Registration.get(position).getVeh_plate());
+        holder.tvUse_Name.setText(Registration.get(position).getUse_name());
+        holder.tvTyre_Type.setText(Registration.get(position).getTyre_type());
     }
 
     @Override
     public int getItemCount() {
-        return registros.size();
+        return Registration.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

@@ -11,7 +11,9 @@ import android.widget.Toast;
 import java.util.List;
 import co.edu.ue.appkelly.Adapter.RegistrationAdapter;
 import co.edu.ue.appkelly.api.ServiciRegistration;
+import co.edu.ue.appkelly.api.ServiciRegistration;
 import co.edu.ue.appkelly.model.Registration;
+import co.edu.ue.appkelly.model.ResponseRegistration;
 import co.edu.ue.appkelly.model.ResponseRegistration;
 import co.edu.ue.appkelly.remote.ClienteRetrofit;
 import retrofit2.Call;
@@ -39,7 +41,7 @@ public class Mis_Registration extends AppCompatActivity {
     public void showRegistration(){
         retrofit = ClienteRetrofit.getClient(BASE_URL);
         ServiciRegistration serviciRegistration = retrofit.create(ServiciRegistration.class);
-        Call<ResponseRegistration> call = serviciRegistration.registros();
+        Call<ResponseRegistration> call = serviciRegistration.registration();
         call.enqueue(new Callback<ResponseRegistration>() {
             @Override
             public void onResponse(Call<ResponseRegistration> call, Response<ResponseRegistration> response) {
@@ -49,8 +51,8 @@ public class Mis_Registration extends AppCompatActivity {
                     RegistrationAdapter = new RegistrationAdapter(RegistrationList,getApplicationContext());
                     recyclerView.setAdapter(RegistrationAdapter);
                 }
+            
             }
-
             @Override
             public void onFailure(Call<ResponseRegistration> call, Throwable t) {
                 Toast.makeText(getApplicationContext(), "Error de Peticion" + t, Toast.LENGTH_SHORT).show();

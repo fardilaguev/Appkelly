@@ -2,13 +2,13 @@ package co.edu.ue.appkelly.model;
 
 import java.util.ArrayList;
 
-public class ResponsePerfil {
+public class ResponseVehicle {
 
-    public ArrayList<Perfil> perfil ;
+    public ArrayList<Vehicle> vehicle ;
 
-    public ArrayList<Perfil> getPerfil() {
-        return perfil;
+    public ArrayList<Vehicle> getVehicle() {
+        return vehicle;
     }
 
-    public void setPerfil(ArrayList<Perfil> perfils){this.perfil= perfil;}
+    public void setVehicle(ArrayList<Vehicle> vehicles){this.vehicle= vehicle;}
 }

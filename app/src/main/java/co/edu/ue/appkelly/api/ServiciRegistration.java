@@ -1,14 +1,11 @@
 package co.edu.ue.appkelly.api;
 
-import co.edu.ue.appkelly.model.Loger;
-import co.edu.ue.appkelly.model.ResponseCredentials;
-import co.edu.ue.appkelly.model.ResponseRegistros;
+import co.edu.ue.appkelly.model.ResponseRegistration;
 import retrofit2.Call;
-import retrofit2.http.Body;
-import retrofit2.http.POST;
+import retrofit2.http.GET;
 
 public interface ServiciRegistration {
-    @POST("results/registros")
-    public Call<ResponseRegistros> registros();
+    @GET("registrations")
+    public Call<ResponseRegistration> registration();
 
 }

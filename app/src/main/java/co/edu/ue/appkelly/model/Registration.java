@@ -1,6 +1,6 @@
 package co.edu.ue.appkelly.model;
 
-public class Registros {
+public class Registration {
     private String reg_id;
     private String reg_date;
     private String veh_id;

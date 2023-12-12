@@ -7,6 +7,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -17,16 +18,32 @@ public class Principal_Estu extends AppCompatActivity {
 
     private Button btnScan;
     private TextView tvScan;
+    private ImageButton ibprin;
+    private ImageButton ibCuen;
 
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal_estu);
-
         btnScan = findViewById(R.id.btnScan);
         tvScan = findViewById(R.id.tvScan);
-
+        ibprin = findViewById(R.id.ibPrincipal);
+        ibCuen = findViewById(R.id.ibCuenta);
+        ibCuen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Usuario.class);
+                startActivity(intent);
+            }
+        });
+        ibprin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Principal_Estu.class);
+                startActivity(intent);
+            }
+        });
         btnScan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

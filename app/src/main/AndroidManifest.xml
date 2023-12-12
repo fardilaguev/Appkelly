@@ -25,8 +25,8 @@
             android:name=".Usuario"
             android:exported="false" />
         <activity
-            android:name=".Mis_Registros"
-            android:exported="false" />
+            android:name=".Mis_Registration"
+            android:exported="true"/>
         <activity
             android:name=".Principal_Cela"
             android:exported="false" />

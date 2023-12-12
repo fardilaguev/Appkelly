@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity{
                 @Override
                 public void onFailure(Call<ResponseCredentials> call, Throwable t) {
                     Log.i("response",t.getMessage());
-                    alertView(""+call.request());
+                    alertView(""+t.getMessage());
                 }
             });
         }
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity{
 
     private void goTo(String rolId){
         try {
-            if (rolId == "2"){
+            if (Integer.parseInt(rolId) == 2){
                 Intent intent = new Intent(this, Principal_Estu.class);
                 startActivity(intent);
                 finish();

@@ -92,7 +92,7 @@
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/tvModel"
+                android:id="@+id/tvPlaca"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
@@ -101,7 +101,7 @@
                 android:text="TextView" />
 
             <TextView
-                android:id="@+id/textView4"
+                android:id="@+id/tvModel"
                 android:layout_width="320dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"

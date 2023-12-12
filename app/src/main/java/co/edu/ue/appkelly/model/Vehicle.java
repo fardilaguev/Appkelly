@@ -1,6 +1,6 @@
 package co.edu.ue.appkelly.model;
 
-public class Perfil {
+public class Vehicle {
     private String veh_plate;
     private String mod_model;
     private String use_name;
