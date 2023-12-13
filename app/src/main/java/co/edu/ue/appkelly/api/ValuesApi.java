@@ -1,5 +1,5 @@
 package co.edu.ue.appkelly.api;
 
 public interface ValuesApi {
-    String BASE_URL = "http://10.57.31.40/API_App/";
+    String BASE_URL = "http://192.168.43.51/API_App/";
 }

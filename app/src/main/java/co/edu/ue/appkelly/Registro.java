@@ -67,8 +67,10 @@ public class Registro extends AppCompatActivity {
         user.setUse_email(etCorreo2.getText().toString());
         user.setUse_password(etContra2.getText().toString());
         user.setUse_name(etName.getText().toString());
-
+        user.setMod_id(etModelo.getText().toString());
+        user.setVeh_plate(etPlaca.getText().toString());
     }
+
 
     private void mostrarDatosBicicleta() {
 

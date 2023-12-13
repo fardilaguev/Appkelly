@@ -6,7 +6,10 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageButton;
 import android.widget.Toast;
 import java.util.List;
 import co.edu.ue.appkelly.Adapter.RegistrationAdapter;
@@ -24,18 +27,28 @@ import retrofit2.Retrofit;
 public class Mis_Registration extends AppCompatActivity {
 
     private Retrofit retrofit;
+    private ImageButton ibPrin;
     private List<Registration> RegistrationList;
     private RecyclerView recyclerView;
     private RegistrationAdapter RegistrationAdapter;
     private ResponseRegistration responseRegistration;
+
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mis_registration);
         recyclerView = findViewById(R.id.rvRegistration);
-        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(),2));
+        recyclerView.setLayoutManager(new GridLayoutManager(getApplicationContext(), 2));
+        ibPrin = findViewById(R.id.ibPrincipal);
         showRegistration();
+        ibPrin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getApplicationContext(), Principal_Estu.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void showRegistration(){

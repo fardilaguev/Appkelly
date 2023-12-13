@@ -13,12 +13,11 @@
     <string name="btnIngreso">Ingreso</string>
     <string name="btnSalida">Salida</string>
     <string name="btnCerrarSesion">Cerrar Sesión</string>
-<<<<<<< HEAD
     //Usuario
     <string name="tvTitulo4">Perfil</string>
     <string name="btnRegistros">Mis Registros</string>
     <string name="tvTitulo5">Registros</string>
-=======
+    //Registros de usuario
     <string name="etCorreo2">Correo Institucional</string>
     <string name="etContra2">Contraseña</string>
     <string name="etName">Ingresa tu nombre</string>
@@ -29,5 +28,4 @@
         <item>Moto</item>
         <item>Bicicleta</item>
     </string-array>
->>>>>>> 7381b27cb3febc2d5f4770e7bbf14f96983e3cf7
 </resources>

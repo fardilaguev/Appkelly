@@ -26,7 +26,7 @@
             android:exported="false" />
         <activity
             android:name=".Mis_Registration"
-            android:exported="true"/>
+            android:exported="false"/>
         <activity
             android:name=".Principal_Cela"
             android:exported="false" />

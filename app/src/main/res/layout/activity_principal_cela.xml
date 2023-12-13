@@ -30,9 +30,9 @@
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="390dp"
+        android:layout_width="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_height="590dp"
+        android:layout_height="match_parent"
         app:cardCornerRadius="40dp">
 
         <LinearLayout

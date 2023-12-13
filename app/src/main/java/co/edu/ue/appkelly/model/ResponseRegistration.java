@@ -8,4 +8,5 @@ public class ResponseRegistration {
         return Registration;
     }
     public void setRegistration(ArrayList<Registration> Registration){this.Registration = Registration;}
+
 }

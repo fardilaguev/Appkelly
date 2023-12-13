@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -30,6 +31,7 @@ public class Usuario extends AppCompatActivity {
     private TextView tvPLac;
     private TextView tvMod;
     private Button btnRegis;
+    private ImageButton ibPrin;
     private ResponseVehicle responseVehicle;
     public List<Vehicle> VehicleList;
 
@@ -42,6 +44,7 @@ public class Usuario extends AppCompatActivity {
         tvMod = findViewById(R.id.tvModel);
         tvPLac = findViewById(R.id.tvPlaca);
         btnRegis = findViewById(R.id.btnRegistros);
+        ibPrin = findViewById(R.id.ibPrincipal);
         showUsuario();
 
         btnRegis.setOnClickListener(new View.OnClickListener() {
@@ -49,10 +52,17 @@ public class Usuario extends AppCompatActivity {
         public void onClick(View view) {
             Intent intent = new Intent(getApplicationContext(), Mis_Registration.class);
             startActivity(intent);
-            }
         }
-);}
-
+    }
+);
+        ibPrin.setOnClickListener(new View.OnClickListener() {
+        @Override
+        public void onClick(View view) {
+            Intent intent = new Intent(getApplicationContext(), Principal_Estu.class);
+            startActivity(intent);
+        }
+    });
+}
         public void showUsuario(){
             retrofit = ClienteRetrofit.getClient(BASE_URL);
             ServiciVehicle serviciVehicle = retrofit.create(ServiciVehicle.class);

@@ -1,20 +1,35 @@
 package co.edu.ue.appkelly;
 
+import static co.edu.ue.appkelly.api.ValuesApi.BASE_URL;
+
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.zxing.BarcodeFormat;
-import com.journeyapps.barcodescanner.BarcodeCallback;
 import com.journeyapps.barcodescanner.BarcodeEncoder;
+
+import co.edu.ue.appkelly.api.ServiciRegistration;
+import co.edu.ue.appkelly.model.Registration;
+import co.edu.ue.appkelly.model.ResponseRegistration;
+import co.edu.ue.appkelly.remote.ClienteRetrofit;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+import retrofit2.Retrofit;
+
 
 public class Principal_Cela extends AppCompatActivity {
 
+    private Retrofit retrofit;
     private Button btnIngreso;
     private Button btnSalida;
     private ImageView imgQr;
@@ -52,6 +67,7 @@ public class Principal_Cela extends AppCompatActivity {
                     e.printStackTrace();
                 }
             }
+
         });
     }
 }
